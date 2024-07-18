@@ -54,7 +54,7 @@ Before you upload any photos, it is advisable to ensure they are optimized to im
     1. *JPG*, *JPEG*, *PNG*, and *BMP*. *TIFF files are not accepted*.
     2. Between *480px* and *1600px* in width or height.
     3. A maximum compression ratio of *90%*.
-        To access this information on the **[Photography guidelines page](../data/photography-guidelines.md)** during submission, navigate to the **Report a Sighting** page and click the **optimize your photos** link under the box.
+        To access this information on the **[Photography guidelines page](../data/optimizing-photographs.md)** during submission, navigate to the **Report a Sighting** page and click the **optimize your photos** link under the box.
 
 ### **Uploading photos**
 
