@@ -6,7 +6,7 @@ Check your spam or trash folder for the password reset email. If it's not there,
 
 ## A colleague is leaving and we need to access to their data when they're gone.
 
-This is a great time to establish an edit [Collaboration](https://docs.wildme.org/product-docs/en/codex/security/collaborations/) with the departing user so that you can manage their Sightings even when they leave your organization.
+This is a great time to establish an edit [Collaboration](security/collaborations.md) with the departing user so that you can manage their Sightings even when they leave your organization.
 
 If your colleague has already left or has chosen not to accept your Collaboration request, you may consider setting up a new Codex account with an email address that goes to a shared inbox. If you and select colleagues want to collectively manage this data, then using a shared inbox means any one of you can reset the password if someone leaves and still maintain access to the account.
 
@@ -14,7 +14,7 @@ Wild Me staff will not mediate any issues that arise between users over account 
 
 ## I need help with Bulk Import.
 
-Additional help with [Bulk Imports](https://docs.wildme.org/product-docs/en/codex/getting-started-with-codex/bulk-reporting/) in Codex is available in our docs.
+Additional help with [Bulk Imports](getting-started-with-codex/bulk-reporting.md) in Codex is available in our docs.
 
 ## How do I unmerge two animals?
 

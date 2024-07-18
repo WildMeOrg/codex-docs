@@ -69,8 +69,8 @@ Codex users with the Admin role can create new custom fields in Codex. At a mini
 Go to the **Actions** menu and click on **Control Panel**, then click on **Manage Fields**.
 
 * **Field categories** organize fields on the sighting submission form. You may need to create a new field category before you can add a new field. *Note that **Field categories** cannot be changed.*
-* **Custom individual fields** create a new [Metadata](https://docs.wildme.org/product-docs/en/codex/data/individual-page/#metadata-for-your-individual) entry on the [Individual page](https://docs.wildme.org/product-docs/en/codex/data/individual-page/).
-* **Custom sighting fields** create a new [Metadata](https://docs.wildme.org/product-docs/en/codex/data/sighting-page/#metadata) entry on the [Sighting page](https://docs.wildme.org/product-docs/en/codex/data/sighting-page/).
+* **Custom individual fields** create a new [Metadata](../../data/individual-page.md#metadata-for-your-individual) entry on the [Individual page](../../data/individual-page.md).
+* **Custom sighting fields** create a new [Metadata](../../data/sighting-page.md#metadata) entry on the [Sighting page](../../data/sighting-page.md).
 
 ### Configuration
 

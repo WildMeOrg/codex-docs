@@ -10,7 +10,7 @@ To report a Sighting without an account, you **must** upload images with your re
 
 Start on the Codex homepage and click the **REPORT SIGHTINGS** button in the center of the page.
 
-*Now jump to the [Optimizing Photos](https://docs.wildme.org/product-docs/en/codex/getting-started-with-codex/standard-reporting/#optimizing-photos) section below.*
+*Now jump to the [Optimizing Photos](#optimizing-photos) section below.*
 
 ### Reporting through an account
 
@@ -26,7 +26,7 @@ To report a Sighting through an account:
 If you are logged into an account, you can skip adding photos on the **Report a Sighting** page, by clicking the **CONTINUE WITHOUT PHOTOGRAPHS** button to go to the next page.
 Reporting a Sighting without photos is suitable when there is no analysis or automation available to assist a sighting submission. It also applies when there is already known information associated with the Sighting, such as historical catalogs.
 
-*Now jump to the [Submitting single or multiple animals](https://docs.wildme.org/product-docs/en/codex/getting-started-with-codex/standard-reporting/#submitting-single-or-multiple-animals) section below.*
+*Now jump to the [Submitting single or multiple animals](#submitting-single-or-multiple-animals) section below.*
 
 ## Reporting a Sighting
 
@@ -54,7 +54,7 @@ Before you upload any photos, it is advisable to ensure they are optimized to im
     1. *JPG*, *JPEG*, *PNG*, and *BMP*. *TIFF files are not accepted*.
     2. Between *480px* and *1600px* in width or height.
     3. A maximum compression ratio of *90%*.
-        To access this information on the **[Photography guidelines page](https://docs.wildme.org/product-docs/en/wildbook/data/photography-guidelines/)** during submission, navigate to the **Report a Sighting** page and click the **optimize your photos** link under the box.
+        To access this information on the **[Photography guidelines page](../data/photography-guidelines.md)** during submission, navigate to the **Report a Sighting** page and click the **optimize your photos** link under the box.
 
 ### **Uploading photos**
 

@@ -4,7 +4,7 @@ Researchers have a limited amount of funding and personnel to spread across the 
 
 # Submitting Contributions
 
-Before submitting photos and the Sighting time and location, photos must be optimized according to Wild Me guidelines. Read our [Photography Guidelines](https://docs.wildme.org/product-docs/en/codex/data/optimizing-photographs/) to ensure your photos are suitable for submission.
+Before submitting photos and the Sighting time and location, photos must be optimized according to Wild Me guidelines. Read our [Photography Guidelines](../data/optimizing-photographs.md) to ensure your photos are suitable for submission.
 
 ## Submitting Photos
 
@@ -19,7 +19,7 @@ Before submitting photos and the Sighting time and location, photos must be opti
 1. On the **Report a Sighting** page, select the number of animals present in the Sighting. *Note*: A Sighting represents the overall observation of one or more animals that were photographed.
     * If a single animal was photographed in the Sighting, select **One animal**.
     * If more than one animal was photographed in the Sighting and they appear to be separately identifiable, select **Multiple animals**.
-2. Scroll down and enter information about the Sighting in the required (\*) fields:
+2. Scroll down and enter information about the Sighting in the required (*) fields:
 3. Click the **Time precision** field then select an option for how precisely the time of the Sighting is known.
 4. Click the **Select date** field and then click the calendar icon on the right to select the date and then select the time of the Sighting.
 5. Click the **Species Detection Model** field then select an option to either enable the computer software to detect the animal and species and generate annotations, or to create annotations manually.

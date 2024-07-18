@@ -95,7 +95,7 @@ To reset the password for your Codex account:
 8. Click the **plus icon (+)** for each animal detected, then select the image with a bounding box around the animal you would like associated. Users may also add any additional metadata to the animals in the sighting at this point.
 9. Select **Commit** at the top of the page.
 10. Users will have the option to run an *identification job* on the images for any matches on other sightings.
-11. Follow **[Confirm Match](https://docs.wildme.org/product-docs/en/codex/data/matching/#confirm-match)** if you decide to run an identification job.
+11. Follow **[Confirm Match](../data/matching.md#confirm-match)** if you decide to run an identification job.
 12. If you decide to go against the identification job, you can still manually identify the animals in your sighting using **Identify** dropdown in the **Animals** tab to either **Create new individual** or **Manually assign** to an existing individual.
 
 ## Next Steps
@@ -106,7 +106,7 @@ Codex is designed with a suite of functionality that can be extended to meet the
 
 ### Extend Collaboration Invites
 
-You might want to extend invitations to collaborate with other Codex users. Visit **[Extend Collaboration Invites - Codex](https://docs.wildme.org/product-docs/en/codex/getting-started-with-codex/collaboration-invites/#extend-collaboration-invites-codex)** to learn more about how to add, edit and revoke collaborations.
+You might want to extend invitations to collaborate with other Codex users. Visit **[Extend Collaboration Invites - Codex](collaboration-invites.md)** to learn more about how to add, edit and revoke collaborations.
 
 ### Request Further Configuration
 
@@ -121,7 +121,7 @@ If these categories apply, please request support on the[ ](https://community.wi
 
 ### Bulk Import Legacy Data for Matching
 
-Many researchers have data from previous studies that need importing into Codex, such as the history of an animal and discoveries over distance/time. See **[Bulk Reporting](https://docs.wildme.org/product-docs/en/codex/getting-started-with-codex/bulk-reporting/)** for more information on how to convert your data to an Excel-based format for import into Codex.
+Many researchers have data from previous studies that need importing into Codex, such as the history of an animal and discoveries over distance/time. See **[Bulk Reporting](bulk-reporting.md)** for more information on how to convert your data to an Excel-based format for import into Codex.
 
 #### How to Upload Images
 

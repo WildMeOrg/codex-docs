@@ -23,7 +23,7 @@ All Jobs: statistics about all jobs that have run on the platform.
 
 ## Job status display
 
-The job status display relates to recent and active jobs that are in the [Image Analysis Pipeline](https://docs.wildme.org/product-docs/en/codex/getting-started-with-codex/image-analysis/).
+The job status display relates to recent and active jobs that are in the [Image Analysis Pipeline](../../getting-started-with-codex/image-analysis.md).
 
 * **In detection queue**: Job is waiting to be processed for annotations.
 * **In identification queue**: Job is waiting to be processed for match results.
