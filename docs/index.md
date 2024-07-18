@@ -17,6 +17,7 @@ Included Wildbook features:
     * Individually identifying each animal detected `("Identification")`
 
 ```{toctree}
+:hidden:
 getting-started-with-codex/index
 data/index
 security/index

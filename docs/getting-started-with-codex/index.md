@@ -13,7 +13,7 @@ merge-individuals
 
 Codex is an open-source software framework supporting collaborative mark recapture, molecular ecology, and social ecology studies. It helps blend structured wildlife research with artificial intelligence, citizen science, and computer vision to accelerate population analysis and develop new insights to fight extinction.
 
-## **Codex Features**
+## Codex Features
 
 Here are the features that Codex users need to be aware of for effective data storage, curation, searching, and analysis:
 
@@ -24,11 +24,11 @@ Here are the features that Codex users need to be aware of for effective data st
 * develop a new animal biometrics solution, like pattern matching from photos, for one or more species
 * collect behavioral and social data for a wildlife study population
 
-## **Codex Terminologies**
+## Codex Terminologies
 
 Codex applies computer vision algorithms and deep learning to distinguish and keep track of species from the images uploaded to the database. Here are helpful terminologies to help you understand Codex’s functionality and features:
 
-### **MediaAsset**
+### MediaAsset
 
 Codex will run the images through a *machine learning stage* *called Detection* to **Annotate** each Animal found on the images.
 
@@ -38,11 +38,11 @@ An **Encounter** is a recorded interaction with a single animal at a specific pl
 
 **Encounters** are a critical component of Codex as they determine if an animal is qualified in a population analysis.
 
-### **Sighting**
+### Sighting
 
 If you interact with 5 animals in the same location at a specific place and time, then that’s a **Sighting** composed of 5 **Encounters**. **Sightings** are for researchers to conduct a thorough study of animals’ social relationships and behaviors.
 
-### **Individuals**
+### Individuals
 
 A single animal that has been given an identifying name and **Annotation** within **Codex** or other Wild Me platforms is called an Individual. For animals to be considered an Individual, their identities and metadata, like social information, needs to be confirmed by a researcher.
 
@@ -83,7 +83,7 @@ To reset the password for your Codex account:
 7. Click the **RESET PASSWORD** button. Once you see a confirmation popup message that says you have successfully reset your password, click the **Return to login page** link.
 8. Log in with your email address and your newly updated password.
 
-## **Matching and Submitting Encounters**
+## Matching and Submitting Encounters
 
 1. On the Codex Home page, click the **plus icon (+)** on the top right corner of the page.
 2. In the space provided, you can *drag* *and* *drop* the images you want to import. You can also select **browse files** to import the images on your device.
