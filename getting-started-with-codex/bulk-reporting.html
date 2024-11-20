@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Bulk Import &#8212; Codex  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'getting-started-with-codex/bulk-reporting';</script>
+    <script src="../_static/tocjs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Image Analysis Pipeline" href="image-analysis.html" />
+    <link rel="prev" title="Report a Sighting" href="standard-reporting.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Codex  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Getting Started with Codex</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="citizen-scientist-submissions.html">Citizen Science Contributions</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="standard-reporting.html">Report a Sighting</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Bulk Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image-analysis.html">Image Analysis Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collaboration-invites.html">Extend Collaboration Invites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curate-sightings.html">Sighting Curation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merge-individuals.html">Merging Individuals</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data/index.html">Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../data/search.html">Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/matching.html">Match Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/sighting-page.html">Sighting page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/individual-page.html">Individual page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/optimizing-photographs.html">Photography Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/managing-the-public-queue.html">Managing the Public Queue</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../security/index.html">Security</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../security/control-panel/index.html">Control Panel</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security/control-panel/manage-fields.html">Configure Default Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/control-panel/site-status.html">Site Status</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../security/home-data-page.html">Home Data Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../security/collaborations.html">Extend Collaboration Invites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../security/profile-page.html">Your Profile</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../manage-users.html">User Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general-faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/getting-started-with-codex/bulk-reporting.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Bulk Import</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-bulk-import">How to use Bulk Import</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-import-fields">Bulk Import Fields</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="bulk-import">
+<h1>Bulk Import<a class="headerlink" href="#bulk-import" title="Link to this heading">#</a></h1>
+<p><strong>Bulk Import</strong> lets users upload up to 1,000 images with a spreadsheet containing the information of the Individuals present on the images.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Your file names and spreadsheet name should only include letters from the English alphabet, 0-9, period, and space.</p>
+</div>
+<section id="how-to-use-bulk-import">
+<h2>How to use Bulk Import<a class="headerlink" href="#how-to-use-bulk-import" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Click on the drop-down arrow on the top right corner of the screen and select <strong>Bulk import</strong>.</p></li>
+<li><p>In the space provided, you can drag and drop the images you want to import. You can also select <strong>browse files</strong> to import the images on your device.</p></li>
+<li><p>To add more, select the <strong>+Add more</strong> button on the top right corner of the <strong>Bulk import</strong> section of the page.</p></li>
+<li><p>Users have the option to <em>skip importing images</em> and go straight to uploading a spreadsheet by selecting the <strong>CONTINUE WITHOUT PHOTOGRAPHS</strong> button at the bottom of the screen. <em>(Note: Users can upload .csv, .tsv, .xls, .xlsx, .xml, .txt file types.)</em></p></li>
+<li><p>Users will be directed to the <strong>REVIEW AVAILABLE FIELDS</strong> page, where fields available for data imports can be reviewed.</p></li>
+<li><p>Select <strong>UPLOAD SPREADSHEET</strong>, then the <strong>Upload data from file</strong> button.</p></li>
+<li><p>After uploading a spreadsheet, you will be routed to the <strong>Import sightings data</strong> page.</p></li>
+<li><p>Check if the <em>Arrow icon</em> on the preview of your spreadsheet is on the row where column headers are located. If it is, select the green <strong>Yes</strong> button. If not, click either the <strong>Select another row</strong> button or the <strong>No header row</strong> button.</p></li>
+<li><p>Users will be routed to the <strong>Match</strong> section of the <strong>Import sightings data</strong> page.</p></li>
+<li><p>Next to the column headers is a <em>drop-down</em> menu where you can specifically assign the fields related to the data on each column.<img alt="ffbulk" src="../_images/flatfile-bulkimport.png" /></p></li>
+<li><p>Select <strong>Confirm mapping</strong> on each section if the data on the column match the fields assigned to them, or <strong>Ignore this column</strong>. Users have to do this in every section. <em>(Note: Deleting blank fields on your spreadsheet will help minimize errors while uploading.)</em></p></li>
+<li><p>Note proceeding to the next page is not possible if certain fields are not assigned to their respective sections.</p></li>
+<li><p>Users will be routed to the <strong>Review</strong> section of the <strong>Import sightings data</strong> page. Any cell highlighted in red needs to be fixed to proceed to the next page.</p></li>
+<li><p>To have a better visualization of the errors you are getting, the <strong>Only show rows with problems</strong> and <strong>Show modifications switches</strong> can be toggled.</p></li>
+<li><p>Select <strong>Continue</strong> on the bottom right corner of the page.</p></li>
+<li><p>Select <strong>Yes</strong> on the pop-up window asking <strong>Are you ready to submit?</strong>.</p></li>
+<li><p>Users will be rerouted to the <strong>REVIEW AVAILABLE FIELDS</strong> page.</p></li>
+<li><p>Select the <strong>Species Detection Model</strong> on the drop-down menu located at the bottom of the page. This section will prompt Codex whether to <em>automatically annotate the images</em> or allow <em>Manual Annotation</em>.</p></li>
+<li><p>Select <strong>REPORT SIGHTINGS</strong> to submit the data you uploaded as <em>pending Sightings</em>.</p></li>
+<li><p>Users will be routed to the page that says <strong>Bulk import reported</strong>. Here you have the option to <strong>RETURN HOME</strong> or <strong>VIEW BULK IMPORT</strong>.</p></li>
+<li><p>If you select <strong>VIEW BULK IMPORT</strong> you will see the <em>pending Sightings</em>. There will be an indicator of <em>how many encounters are present on each Sighting</em>. These data will be under the <strong>Asset count</strong> column.</p></li>
+<li><p>You can select the <strong>view icon</strong> at the end of each row to view any of the Sightings.</p></li>
+<li><p>Users will be routed to the <strong>Pending Sighting</strong> page. Scroll down and select <strong>ASSIGN ANNOTATIONS</strong> to <em>begin the curation process and set IDs.</em></p></li>
+<li><p>These Sightings are also available on the <strong>PENDING SIGHTINGS</strong> section of your homepage.</p></li>
+</ol>
+</section>
+<section id="bulk-import-fields">
+<h2>Bulk Import Fields<a class="headerlink" href="#bulk-import-fields" title="Link to this heading">#</a></h2>
+<p>Available fields specific to your Codex are displayed in the bulk import workflow.</p>
+<p><em>Region</em>, <em>Time</em>, and <em>Time Precision</em> are required for a successful import.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This table includes only the shared bulk import fields across all Codexes. You can post a request for a new custom field (Such as Life Stage or Living Status) for your Codex in <a class="reference external" href="https://community.wildme.org/">Community</a> under the <em>New Codex Field</em> post category.</p>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Animal fields</p></th>
+<th class="head"><p>Example value</p></th>
+<th class="head"><p>Pre-set value?</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Individual Name</p></td>
+<td><p>Seal001</p></td>
+<td><p>–</p></td>
+<td><p>Default display name for the Individual</p></td>
+</tr>
+<tr class="row-odd"><td><p>Species</p></td>
+<td><p>Phoca vitulina</p></td>
+<td><p>See Codex for list of supported species under <em>Report a Sighting &gt; Individual Information &gt; Species</em></p></td>
+<td><p>Genus and specific epithet.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sex</p></td>
+<td><p>unknown</p></td>
+<td><p>male, female, unknown</p></td>
+<td><p>Sex of the animal</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Sighting fields</p></th>
+<th class="head"><p>Example value</p></th>
+<th class="head"><p>Pre-set value?</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Sighting ID</p></td>
+<td><p>BPCT_20190825_1</p></td>
+<td><p>–</p></td>
+<td><p>A unique code for the sighting</p></td>
+</tr>
+<tr class="row-odd"><td><p>Assets</p></td>
+<td><p>1235.jpg</p></td>
+<td><p>–</p></td>
+<td><p>The exact file name of the image.</p></td>
+</tr>
+<tr class="row-even"><td><p>Region</p></td>
+<td><p>Pacific Ocean</p></td>
+<td><p>See Codex for list of supported regions under <em>Report a Sighting &gt; Location &gt; Region</em></p></td>
+<td><p>Must match the region as shown in the Location menu of the Report a Sighting page. <strong>This field is required for a successful import.</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Notes</p></td>
+<td><p>We also took a separate video observation.</p></td>
+<td><p>–</p></td>
+<td><p>Notes about the sighting</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Shared animal and sighting fields</p></th>
+<th class="head"><p>Example value</p></th>
+<th class="head"><p>Pre-set value?</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Decimal Latitude</p></td>
+<td><p>-35.46</p></td>
+<td><p>–</p></td>
+<td><p>Enter latitude coordinates using decimals instead of degrees, minutes, and seconds (DMS).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Decimal Longitude</p></td>
+<td><p>54.678</p></td>
+<td><p>–</p></td>
+<td><p>Enter longitude coordinates using decimals instead of degrees, minutes, and seconds (DMS). A location is required for a successful import. Use Region if you don’t include Decimal Longitude.</p></td>
+</tr>
+<tr class="row-even"><td><p>Time (year)</p></td>
+<td><p>2023</p></td>
+<td><p>–</p></td>
+<td><p>Enter a 4 digit number for the year. <strong>This field is required for a successful bulk import.</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Time (month)</p></td>
+<td><p>8</p></td>
+<td><p>1-12</p></td>
+<td><p>Enter a number 1-12 corresponding with the the month of the sighting</p></td>
+</tr>
+<tr class="row-even"><td><p>Time (day)</p></td>
+<td><p>24</p></td>
+<td><p>1-31</p></td>
+<td><p>Enter a number 1-31 corresponding with the day of the month</p></td>
+</tr>
+<tr class="row-odd"><td><p>Time (hour)</p></td>
+<td><p>11</p></td>
+<td><p>1-24</p></td>
+<td><p>Enter a number 1-24, 24 corresponding with midnight</p></td>
+</tr>
+<tr class="row-even"><td><p>Time (minutes)</p></td>
+<td><p>35</p></td>
+<td><p>0-59</p></td>
+<td><p>Enter a number 00-59</p></td>
+</tr>
+<tr class="row-odd"><td><p>Time Precision</p></td>
+<td><p>day</p></td>
+<td><p>year, month, day, time</p></td>
+<td><p>Enter how precise the time is that you reported above. If you reported the year, month and day, enter “day” for this field. If you reported the time down to the minute, enter “minute” for this field. <strong>This field is required for a successful import.</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Timezone</p></td>
+<td><p>-08:00</p></td>
+<td><p>+zz:zz or -zz:zz</p></td>
+<td><p>Enter as an <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_UTC_offsets">offset of UTC</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Freeform location</p></td>
+<td><p>Saw this about five minutes into our tour near mile marker 5, somewhere in Tanzania</p></td>
+<td><p>–</p></td>
+<td><p>Freeform field to describe the location where the sighting took place</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="standard-reporting.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Report a Sighting</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="image-analysis.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Image Analysis Pipeline</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-bulk-import">How to use Bulk Import</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-import-fields">Bulk Import Fields</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wild Me
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 Conservation X Labs.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

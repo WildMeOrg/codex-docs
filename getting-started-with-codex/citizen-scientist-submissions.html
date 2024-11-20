@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Citizen Science Contributions &#8212; Codex  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'getting-started-with-codex/citizen-scientist-submissions';</script>
+    <script src="../_static/tocjs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Report a Sighting" href="standard-reporting.html" />
+    <link rel="prev" title="Getting Started with Codex" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Codex  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Getting Started with Codex</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Citizen Science Contributions</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="standard-reporting.html">Report a Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bulk-reporting.html">Bulk Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image-analysis.html">Image Analysis Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collaboration-invites.html">Extend Collaboration Invites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curate-sightings.html">Sighting Curation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merge-individuals.html">Merging Individuals</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data/index.html">Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../data/search.html">Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/matching.html">Match Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/sighting-page.html">Sighting page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/individual-page.html">Individual page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/optimizing-photographs.html">Photography Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/managing-the-public-queue.html">Managing the Public Queue</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../security/index.html">Security</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../security/control-panel/index.html">Control Panel</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security/control-panel/manage-fields.html">Configure Default Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/control-panel/site-status.html">Site Status</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../security/home-data-page.html">Home Data Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../security/collaborations.html">Extend Collaboration Invites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../security/profile-page.html">Your Profile</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../manage-users.html">User Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general-faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/getting-started-with-codex/citizen-scientist-submissions.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Citizen Science Contributions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Citizen Science Contributions</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-contributions">Submitting Contributions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-photos">Submitting Photos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-information">Submitting Information</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#keeping-track-of-submission-successes">Keeping Track of Submission Successes</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="citizen-science-contributions">
+<h1>Citizen Science Contributions<a class="headerlink" href="#citizen-science-contributions" title="Link to this heading">#</a></h1>
+<p>Researchers have a limited amount of funding and personnel to spread across the global challenge of monitoring species populations. To support their work and our future, we encourage anyone from the public to present any number of images to Wild Me platforms. Your photos help create larger and more accurate pools of data on animal species across the globe, and that support directly leads to more effective conservation action to save endangered species. By contributing your photos and data, you can hugely benefit the entire conservation community by ensuring we have the best-equipped researchers and policymakers to establish suitable management strategies, shape public conservation policies, and publish effective research to support conservation work in years to come.</p>
+</section>
+<section id="submitting-contributions">
+<h1>Submitting Contributions<a class="headerlink" href="#submitting-contributions" title="Link to this heading">#</a></h1>
+<p>Before submitting photos and the Sighting time and location, photos must be optimized according to Wild Me guidelines. Read our <a class="reference internal" href="../data/optimizing-photographs.html"><span class="std std-doc">Photography Guidelines</span></a> to ensure your photos are suitable for submission.</p>
+<section id="submitting-photos">
+<h2>Submitting Photos<a class="headerlink" href="#submitting-photos" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Navigate to the Codex homepage and click the <strong>REPORT SIGHTINGS</strong> button in the center of the page.</p></li>
+<li><p>To upload photos, drag your image files into the box, or click the <strong>browse files</strong> link to select images from your computer.</p>
+<ul class="simple">
+<li><p>To add more photos, click the <strong>+ Add more</strong> button on the right above the images.</p></li>
+<li><p>To delete a photo, click the small <strong>x</strong> cross in the top right corner of the photo.</p></li>
+</ul>
+</li>
+<li><p>Once your uploads are complete, click the <strong>CONTINUE</strong> button under the images.</p></li>
+</ol>
+</section>
+<section id="submitting-information">
+<h2>Submitting Information<a class="headerlink" href="#submitting-information" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>On the <strong>Report a Sighting</strong> page, select the number of animals present in the Sighting. <em>Note</em>: A Sighting represents the overall observation of one or more animals that were photographed.</p>
+<ul class="simple">
+<li><p>If a single animal was photographed in the Sighting, select <strong>One animal</strong>.</p></li>
+<li><p>If more than one animal was photographed in the Sighting and they appear to be separately identifiable, select <strong>Multiple animals</strong>.</p></li>
+</ul>
+</li>
+<li><p>Scroll down and enter information about the Sighting in the required (*) fields:</p></li>
+<li><p>Click the <strong>Time precision</strong> field then select an option for how precisely the time of the Sighting is known.</p></li>
+<li><p>Click the <strong>Select date</strong> field and then click the calendar icon on the right to select the date and then select the time of the Sighting.</p></li>
+<li><p>Click the <strong>Species Detection Model</strong> field then select an option to either enable the computer software to detect the animal and species and generate annotations, or to create annotations manually.</p></li>
+<li><p>Click the <strong>Region</strong> field and then select the area where the Sighting took place.</p></li>
+<li><p>Click and enter any information in any of the following optional fields as you scroll down the page.</p></li>
+<li><p>Scroll down to the bottom of the page and click the box to confirm you agree to the terms and conditions.</p></li>
+<li><p>Click the <strong>REPORT SIGHTING</strong> button at the bottom of the page.</p></li>
+</ol>
+<p>A confirmation page and message that your sighting has been reported successfully will appear. Your sighting is now part of our platform’s public data. A researcher will review the animals in your photos to see if they match any on the database.</p>
+<p>Click the <strong>REPORT ANOTHER SIGHTING</strong> button to submit more data, or click the <strong>RETURN HOME</strong> button to return to the homepage.</p>
+</section>
+</section>
+<section id="keeping-track-of-submission-successes">
+<h1>Keeping Track of Submission Successes<a class="headerlink" href="#keeping-track-of-submission-successes" title="Link to this heading">#</a></h1>
+<p>You can keep track of your submissions and how they add valuable matching results that contribute to species population counts with your own account. We value your time and efforts contributing to conservation research and can provide you with a record of this.</p>
+<p>To request an account and track your impact:</p>
+<ol class="arabic simple">
+<li><p>From the home page, click the <strong>Login</strong> button in the top right corner.</p></li>
+<li><p>Click the <strong>Request an invitation</strong> link.</p></li>
+<li><p>On the <strong>Request an invitation</strong> page, complete the <strong>Email address</strong> and <strong>Your name</strong> fields with the details you wish to associate with the account. Optionally, type a note in the <strong>Message for administrators</strong> field explaining why you want an account.</p></li>
+<li><p>Click the <strong>SEND REQUEST</strong> button.</p></li>
+<li><p>You will receive an email with your temporary login information. Follow the instructions in the email to finish the registration process for your account.</p></li>
+</ol>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Getting Started with Codex</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="standard-reporting.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Report a Sighting</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Citizen Science Contributions</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-contributions">Submitting Contributions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-photos">Submitting Photos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-information">Submitting Information</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#keeping-track-of-submission-successes">Keeping Track of Submission Successes</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wild Me
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 Conservation X Labs.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

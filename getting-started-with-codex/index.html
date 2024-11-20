@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Getting Started with Codex &#8212; Codex  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'getting-started-with-codex/index';</script>
+    <script src="../_static/tocjs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Citizen Science Contributions" href="citizen-scientist-submissions.html" />
+    <link rel="prev" title="Codex Docs (Archived)" href="../index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Codex  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Getting Started with Codex</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="citizen-scientist-submissions.html">Citizen Science Contributions</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="standard-reporting.html">Report a Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bulk-reporting.html">Bulk Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image-analysis.html">Image Analysis Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collaboration-invites.html">Extend Collaboration Invites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curate-sightings.html">Sighting Curation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merge-individuals.html">Merging Individuals</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data/index.html">Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../data/search.html">Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/matching.html">Match Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/sighting-page.html">Sighting page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/individual-page.html">Individual page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/optimizing-photographs.html">Photography Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/managing-the-public-queue.html">Managing the Public Queue</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../security/index.html">Security</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../security/control-panel/index.html">Control Panel</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security/control-panel/manage-fields.html">Configure Default Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/control-panel/site-status.html">Site Status</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../security/home-data-page.html">Home Data Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../security/collaborations.html">Extend Collaboration Invites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../security/profile-page.html">Your Profile</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../manage-users.html">User Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general-faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/getting-started-with-codex/index.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Getting Started with Codex</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codex-features">Codex Features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codex-terminologies">Codex Terminologies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mediaasset">MediaAsset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter">Encounter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sighting">Sighting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individuals">Individuals</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#account-registration">Account Registration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#registering-a-new-account">Registering a new account</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logging-into-your-account">Logging into your account</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-your-password">Change Your Password</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matching-and-submitting-encounters">Matching and Submitting Encounters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extend-collaboration-invites">Extend Collaboration Invites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-further-configuration">Request Further Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-import-legacy-data-for-matching">Bulk Import Legacy Data for Matching</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-upload-images">How to Upload Images</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-upload-metadata">How to Upload Metadata</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="getting-started-with-codex">
+<h1>Getting Started with Codex<a class="headerlink" href="#getting-started-with-codex" title="Link to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Codex is an open-source software framework supporting collaborative mark recapture, molecular ecology, and social ecology studies. It helps blend structured wildlife research with artificial intelligence, citizen science, and computer vision to accelerate population analysis and develop new insights to fight extinction.</p>
+<section id="codex-features">
+<h2>Codex Features<a class="headerlink" href="#codex-features" title="Link to this heading">#</a></h2>
+<p>Here are the features that Codex users need to be aware of for effective data storage, curation, searching, and analysis:</p>
+<ul class="simple">
+<li><p>track individual animals in wildlife populations using natural markings, genetic identifiers, or vocalizations</p></li>
+<li><p>collect biological samples from wildlife populations to perform genetic and/or chemical analyses like stable isotope measurements, haplotype determination, etc.</p></li>
+<li><p>engage citizen scientists and use social media to collect sighting information</p></li>
+<li><p>build a collaborative and distributed research network for a migratory and global species</p></li>
+<li><p>develop a new animal biometrics solution, like pattern matching from photos, for one or more species</p></li>
+<li><p>collect behavioral and social data for a wildlife study population</p></li>
+</ul>
+</section>
+<section id="codex-terminologies">
+<h2>Codex Terminologies<a class="headerlink" href="#codex-terminologies" title="Link to this heading">#</a></h2>
+<p>Codex applies computer vision algorithms and deep learning to distinguish and keep track of species from the images uploaded to the database. Here are helpful terminologies to help you understand Codex’s functionality and features:</p>
+<section id="mediaasset">
+<h3>MediaAsset<a class="headerlink" href="#mediaasset" title="Link to this heading">#</a></h3>
+<p>Codex will run the images through a <em>machine learning stage</em> <em>called Detection</em> to <strong>Annotate</strong> each Animal found on the images.</p>
+</section>
+<section id="encounter">
+<h3>Encounter<a class="headerlink" href="#encounter" title="Link to this heading">#</a></h3>
+<p>An <strong>Encounter</strong> is a recorded interaction with a single animal at a specific place and time. For example, if you interacted with 5 animals in the same location and time, you would have 5 Encounters.</p>
+<p><strong>Encounters</strong> are a critical component of Codex as they determine if an animal is qualified in a population analysis.</p>
+</section>
+<section id="sighting">
+<h3>Sighting<a class="headerlink" href="#sighting" title="Link to this heading">#</a></h3>
+<p>If you interact with 5 animals in the same location at a specific place and time, then that’s a <strong>Sighting</strong> composed of 5 <strong>Encounters</strong>. <strong>Sightings</strong> are for researchers to conduct a thorough study of animals’ social relationships and behaviors.</p>
+</section>
+<section id="individuals">
+<h3>Individuals<a class="headerlink" href="#individuals" title="Link to this heading">#</a></h3>
+<p>A single animal that has been given an identifying name and <strong>Annotation</strong> within <strong>Codex</strong> or other Wild Me platforms is called an Individual. For animals to be considered an Individual, their identities and metadata, like social information, needs to be confirmed by a researcher.</p>
+</section>
+</section>
+<section id="account-registration">
+<h2>Account Registration<a class="headerlink" href="#account-registration" title="Link to this heading">#</a></h2>
+<p>When you first access a Codex site, you see the home page. You can view information on this specific instance by scrolling down the page, which displays content including how Codex works, facts and figures, social links, and buttons with calls to action. To get started, register an account.</p>
+<section id="registering-a-new-account">
+<h3>Registering a new account<a class="headerlink" href="#registering-a-new-account" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>From the home page, click the <strong>Login</strong> button in the top right corner.</p></li>
+<li><p>Click the <strong>Request an invitation</strong> link.</p></li>
+<li><p>You will be routed to the <strong>Request an invitation</strong> page.</p></li>
+<li><p>Provide the <strong>Email address</strong> you want to be associated with your account and <strong>Your name</strong> so the site administrators know who is making the request. Optionally, you can also provide a note to the administrators explaining why you want access, by typing in the <strong>Message for administrators</strong> field.</p></li>
+<li><p>Click the <strong>SEND REQUEST</strong> button.</p></li>
+<li><p>You will receive an email with your temporary login information. Follow the instructions in the email to finish the registration process for your Codex account.</p></li>
+</ol>
+</section>
+<section id="logging-into-your-account">
+<h3>Logging into your account<a class="headerlink" href="#logging-into-your-account" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Click the <strong>Login</strong> button at the top right of the page.</p></li>
+<li><p>Provide your <strong>Email address</strong> and the temporary <strong>Password</strong> you received from your welcome email in the fields.</p></li>
+<li><p>Optionally, you can toggle the <strong>Keep me logged in</strong> button to keep yourself logged in for your next session.</p></li>
+<li><p>Click the <strong>LOGIN</strong> button.</p></li>
+<li><p>Check your email for a link to verify your account. Click the <strong>Verify Email</strong> link in the message.</p></li>
+<li><p>Click <strong>RETURN HOME</strong> on the verification success page.</p></li>
+<li><p>Provide your <strong>Full name</strong> and click the checkbox after reviewing the <strong>Terms and Conditions</strong> and <strong>Data Usage Policy</strong> to finish setting up your profile.</p></li>
+<li><p>Click <strong>SAVE PROFILE</strong>.</p></li>
+</ol>
+</section>
+</section>
+<section id="change-your-password">
+<h2>Change Your Password<a class="headerlink" href="#change-your-password" title="Link to this heading">#</a></h2>
+<p>To reset the password for your Codex account:</p>
+<ol class="arabic simple">
+<li><p>On the Account Login page, click the <strong>Forgot?</strong> link below the <strong>LOGIN</strong> button.</p></li>
+<li><p>On the next page, provide the email address associated with your Codex account in the <strong>Email address</strong> field.</p></li>
+<li><p>Click the <strong>Reset Password</strong> button.</p></li>
+<li><p>Check your email inbox where you will receive an account password reset email. If you do not receive this, click the <strong>Resend Email</strong> button on the Password reset page.</p></li>
+<li><p>Click on the link in the email you receive, which will direct you back to the Codex website to create a new password.</p></li>
+<li><p>Type in your desired new password and repeat the same password in the <strong>Confirm password</strong> field. We recommend using at least 8 characters and a combination of letters, numbers, and special characters.</p></li>
+<li><p>Click the <strong>RESET PASSWORD</strong> button. Once you see a confirmation popup message that says you have successfully reset your password, click the <strong>Return to login page</strong> link.</p></li>
+<li><p>Log in with your email address and your newly updated password.</p></li>
+</ol>
+</section>
+<section id="matching-and-submitting-encounters">
+<h2>Matching and Submitting Encounters<a class="headerlink" href="#matching-and-submitting-encounters" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>On the Codex Home page, click the <strong>plus icon (+)</strong> on the top right corner of the page.</p></li>
+<li><p>In the space provided, you can <em>drag</em> <em>and</em> <em>drop</em> the images you want to import. You can also select <strong>browse files</strong> to import the images on your device.</p></li>
+<li><p>To add more, select the <strong>+Add more</strong> button on the top right corner of the page then click <strong>CONTINUE</strong>.</p></li>
+<li><p>Users have the option to <em>skip importing images</em> and go straight to uploading a <strong>.csv file</strong> by selecting the <strong>CONTINUE WITHOUT PHOTOGRAPHS</strong> button at the bottom of the screen.</p></li>
+<li><p>Provide accurate answers to the questions that would follow. Users need to indicate the <em>number of animals on the sighting, Time of Sighting, Species Detection Model, Region, etc</em>.</p></li>
+<li><p>Click <strong>REPORT SIGHTING</strong>.</p></li>
+<li><p>After the animal detection phase, users will be prompted to assign Annotations for the images that were uploaded.</p></li>
+<li><p>Click the <strong>plus icon (+)</strong> for each animal detected, then select the image with a bounding box around the animal you would like associated. Users may also add any additional metadata to the animals in the sighting at this point.</p></li>
+<li><p>Select <strong>Commit</strong> at the top of the page.</p></li>
+<li><p>Users will have the option to run an <em>identification job</em> on the images for any matches on other sightings.</p></li>
+<li><p>Follow <strong><a class="reference internal" href="../data/matching.html#confirm-match"><span class="std std-ref">Confirm Match</span></a></strong> if you decide to run an identification job.</p></li>
+<li><p>If you decide to go against the identification job, you can still manually identify the animals in your sighting using <strong>Identify</strong> dropdown in the <strong>Animals</strong> tab to either <strong>Create new individual</strong> or <strong>Manually assign</strong> to an existing individual.</p></li>
+</ol>
+</section>
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
+<p>Codex is a scalable and collaborative platform so that anyone from around the globe can participate. Sharing information such as images and data regarding them will make all the difference in collecting data for studying the wildlife population.</p>
+<p>Codex is designed with a suite of functionality that can be extended to meet the needs of wildlife projects, especially where individual identification is used.</p>
+<section id="extend-collaboration-invites">
+<h3>Extend Collaboration Invites<a class="headerlink" href="#extend-collaboration-invites" title="Link to this heading">#</a></h3>
+<p>You might want to extend invitations to collaborate with other Codex users. Visit <strong><a class="reference internal" href="collaboration-invites.html"><span class="std std-doc">Extend Collaboration Invites - Codex</span></a></strong> to learn more about how to add, edit and revoke collaborations.</p>
+</section>
+<section id="request-further-configuration">
+<h3>Request Further Configuration<a class="headerlink" href="#request-further-configuration" title="Link to this heading">#</a></h3>
+<p>A Codex platform might need some configurations to improve the quality of your research. Here are some of the common configuration changes:</p>
+<ul class="simple">
+<li><p>Adding your project’s study sites (also known as <strong>Location ID</strong> in Codex) that represent distinct areas where you conduct your data collection.</p></li>
+<li><p>Associating your user account with an organization and/or providing you with orgAdmin privileges allows you to bring additional users into Codex for your organization.</p></li>
+<li><p>Adding additional species to Codex.</p></li>
+<li><p>Working with Wild Me to create new machine learning or cross-apply existing techniques for a species.</p></li>
+</ul>
+<p>If these categories apply, please request support on the<a class="reference external" href="https://community.wildme.org/c/feature-requests/6"> </a><strong><a class="reference external" href="https://community.wildme.org/c/feature-requests/6">Wild Me Community Forums - Feature Requests</a></strong>.</p>
+</section>
+<section id="bulk-import-legacy-data-for-matching">
+<h3>Bulk Import Legacy Data for Matching<a class="headerlink" href="#bulk-import-legacy-data-for-matching" title="Link to this heading">#</a></h3>
+<p>Many researchers have data from previous studies that need importing into Codex, such as the history of an animal and discoveries over distance/time. See <strong><a class="reference internal" href="bulk-reporting.html"><span class="std std-doc">Bulk Reporting</span></a></strong> for more information on how to convert your data to an Excel-based format for import into Codex.</p>
+<section id="how-to-upload-images">
+<h4>How to Upload Images<a class="headerlink" href="#how-to-upload-images" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>From your <em>Codex homepage</em>, click the <strong>Actions</strong> button in the upper right corner of the screen.</p></li>
+<li><p>Select <strong>Bulk import</strong>. You can only upload images in <code class="docutils literal notranslate"><span class="pre">.jpg</span></code>, <code class="docutils literal notranslate"><span class="pre">.jpeg</span></code>, and <code class="docutils literal notranslate"><span class="pre">.png</span></code> formats.</p></li>
+<li><p>You will be directed to a page where you can upload images. You have the option to either <em>Drop files</em> or <em>Browse files</em>.</p></li>
+<li><p>If you have another window open with the photos you want to upload; you can drag them directly to the <em>Bulk import</em> page to upload them.</p></li>
+<li><p>You can also select <em>Browse files</em> to locate and upload the images from your device.</p></li>
+<li><p>There will be a progress bar at the bottom of the screen showing the progress of your upload. Once everything is uploaded successfully, you will see <em>Complete</em> in place of the progress bar.</p></li>
+<li><p>Add more photos by clicking <strong>Add more</strong> on the upper right corner of the page.</p></li>
+<li><p>Select <strong>CONTINUE</strong>.</p></li>
+</ol>
+</section>
+<section id="how-to-upload-metadata">
+<h4>How to Upload Metadata<a class="headerlink" href="#how-to-upload-metadata" title="Link to this heading">#</a></h4>
+<ol class="arabic simple" start="10">
+<li><p>Select <strong>UPLOAD SPREADSHEET</strong> to upload a <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file.</p></li>
+<li><p>Once your <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file is uploaded; you will be directed to a page to verify your uploaded data.</p></li>
+<li><p>Make sure that the correct rows for <em>column headers</em> are selected.</p></li>
+<li><p>After verifying all the data on the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file, select <strong>Confirm mapping</strong> or <strong>Ignore this column</strong> based on your preference.</p></li>
+<li><p>Select <strong>Review</strong>.</p></li>
+<li><p>You will be directed to another page to review your data.</p></li>
+<li><p>Note that if there are errors, you won’t be able to continue.</p></li>
+<li><p>After resolving any errors, select <strong>Continue</strong>.</p></li>
+<li><p>A pop-up window will appear asking you to verify you’re ready to submit your sighting.</p></li>
+<li><p>Select <strong>Yes</strong> to finish bulk importing your information and images.</p></li>
+</ol>
+</section>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Codex Docs (Archived)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="citizen-scientist-submissions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Citizen Science Contributions</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codex-features">Codex Features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codex-terminologies">Codex Terminologies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mediaasset">MediaAsset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter">Encounter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sighting">Sighting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individuals">Individuals</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#account-registration">Account Registration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#registering-a-new-account">Registering a new account</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logging-into-your-account">Logging into your account</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-your-password">Change Your Password</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matching-and-submitting-encounters">Matching and Submitting Encounters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extend-collaboration-invites">Extend Collaboration Invites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-further-configuration">Request Further Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-import-legacy-data-for-matching">Bulk Import Legacy Data for Matching</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-upload-images">How to Upload Images</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-upload-metadata">How to Upload Metadata</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wild Me
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 Conservation X Labs.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
